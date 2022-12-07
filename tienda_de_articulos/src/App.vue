@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav >
+      <router-link to="/">Inicio</router-link> 
+      <router-link to="/articulos">Articulos</router-link>
+      <router-link to="/proveedores">Proveedores</router-link>
+      <router-link to="/clientes">Clientes</router-link>
+      <router-link to="/altas">Consulta de altas</router-link>
+      <router-link to="/bajas">Consulta de bajas</router-link>
     </nav>
     <router-view/>
+    
   </div>
 </template>
 
@@ -19,13 +24,19 @@
 
 nav {
   padding: 30px;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(145,10,115,0.9668242296918768) 34%, rgba(205,223,17,1) 66%);
+  text-align: left;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
-
+    font-weight: 999;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+   
     &.router-link-exact-active {
-      color: #42b983;
+      color: #1435a3;
+      text-shadow: black 1px 1px;
     }
   }
 }
