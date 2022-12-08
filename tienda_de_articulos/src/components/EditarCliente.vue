@@ -52,13 +52,12 @@ export default {
         },
         actualizar: async function()
         {
-            /*const res = await axios.put(URL_DATOS+"/articulos/"+this.id,{
-                descripcion: this.articulos.descripcion,
-                precio:this.articulos.precio,
-                cantidad: this.articulos.cantidad,
+            const res = await axios.put(URL_DATOS+"/clientes/"+this.id,{
+                nombre: this.clientes.Nombre,
+                direccion:this.clientes.Direccion,
+                rfc: this.clientes.RFC,
             });
-            console.log(res);*/
-            console.log('actualizar');
+            console.log(res);
         },
         
     },

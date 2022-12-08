@@ -1,12 +1,12 @@
 <template>
-    <tabla-altas></tabla-altas>
+    <form-altas></form-altas>
 </template>
 
 <script>
-import TablaAltas from '../components/TablaAltas.vue'
+import FormAltas from '../components/FormAltas.vue';
 export default {
     name: "Altas",
-    components: {TablaAltas},
+    components: {FormAltas},
     data: function()
     {
         return {};

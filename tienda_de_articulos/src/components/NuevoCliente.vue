@@ -29,13 +29,13 @@ export default {
     methods: {
         nuevo: async function()
         {
-             /*const res = await axios.post(URL_DATOS+"/articulos/",{
-                descripcion: this.articulos.descripcion,
-                precio:this.articulos.precio,
-                cantidad: this.articulos.cantidad,
+             const res = await axios.post(URL_DATOS+"/clientes/",{
+                nombre: this.clientes.Nombre,
+                direccion:this.clientes.Direccion,
+                rfc: this.clientes.RFC,
             });
-            console.log(res);*/
-            console.log('Agregar');
+            console.log(res);
+            
         }
     },
 }

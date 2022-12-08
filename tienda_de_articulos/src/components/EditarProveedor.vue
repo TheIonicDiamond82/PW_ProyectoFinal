@@ -59,13 +59,15 @@ export default {
         },
         actualizar: async function()
         {
-            /*const res = await axios.put(URL_DATOS+"/articulos/"+this.id,{
-                descripcion: this.articulos.descripcion,
-                precio:this.articulos.precio,
-                cantidad: this.articulos.cantidad,
+            const res = await axios.put(URL_DATOS+"/proveedores/"+this.id,{
+                nombre: this.proveedores.Nombre,
+                direccion: this.proveedores.Direccion,
+                rfc: this.proveedores.RFC,
+                telefono: this.proveedores.Telefono,
+                observaciones:this.proveedores.Observaciones
             });
-            console.log(res);*/
-            console.log('actualizar');
+            console.log(res);
+            
         },
         
     },

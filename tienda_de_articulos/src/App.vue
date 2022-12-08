@@ -5,8 +5,8 @@
       <router-link to="/articulos">Articulos</router-link>
       <router-link to="/proveedores">Proveedores</router-link>
       <router-link to="/clientes">Clientes</router-link>
-      <router-link to="/altas">Consulta de altas</router-link>
-      <router-link to="/bajas">Consulta de bajas</router-link>
+      <router-link to="/altas">Altas de articulos</router-link>
+      <router-link to="/bajas">Bajas de articulos</router-link>
     </nav>
     <router-view/>
     

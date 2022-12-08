@@ -36,13 +36,14 @@ export default {
     methods: {
         nuevo: async function()
         {
-             /*const res = await axios.post(URL_DATOS+"/articulos/",{
-                descripcion: this.articulos.descripcion,
-                precio:this.articulos.precio,
-                cantidad: this.articulos.cantidad,
+             const res = await axios.post(URL_DATOS+"/proveedores/",{
+                nombre: this.proveedores.Nombre,
+                direccion: this.proveedores.Direccion,
+                rfc: this.proveedores.RFC,
+                telefono: this.proveedores.Telefono,
+                observaciones:this.proveedores.Observaciones
             });
-            console.log(res);*/
-            console.log('Agregar');
+            console.log(res);
         }
     },
 }

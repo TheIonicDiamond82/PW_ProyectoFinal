@@ -1,12 +1,12 @@
 <template>
-    <tabla-bajas></tabla-bajas>
+    <form-bajas></form-bajas>
 </template>
 
 <script>
-import TablaBajas from '../components/TablaBajas.vue';
+import FormBajas from '../components/FormBajas.vue';
 export default {
     name: "Bajas",
-    components: { TablaBajas},
+    components: {FormBajas},
     data: function()
     {
         return {};

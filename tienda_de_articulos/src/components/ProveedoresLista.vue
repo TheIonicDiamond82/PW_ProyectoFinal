@@ -88,10 +88,18 @@ export default {
         },
         eliminarProveedor: async function(id)
         {
-            /*const res = await axios.delete(URL_DATOS+"/articulos/"+id);
-            console.log(res)*/
-            this.traeProveedores();
-            console.log('Borrar')
+            
+            
+            if(confirm("¿Seguro que deseas eliminar este proveedor?"))
+           {
+                const res = await axios.delete(URL_DATOS+"/proveedores/"+id);
+                this.traeProveedores();
+                console.log(res)
+                
+            }
+            else{
+                
+            }
         },
         nuevoProveedor: function()
         {

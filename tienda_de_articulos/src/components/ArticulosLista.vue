@@ -18,13 +18,13 @@
                     <a href="" @click.prevent="detalleArticulo(art.id)">{{art.id}}</a>
                 </td>
                 <td >
-                    {{art.Descripcion}}
+                    {{art.descripcion}}
                 </td>
                 <td >
                     {{art.precio}}
                 </td>
                 <td >
-                    {{art.Cantidad}}
+                    {{art.cantidad}}
                 </td>
                 <td >
                    <button id="edit" class="btn btn-info btn-md" @click.prevent="editarArticulo(art.id)">Editar</button>
@@ -80,10 +80,17 @@ export default {
         },
         eliminarArticulo: async function(id)
         {
-            /*const res = await axios.delete(URL_DATOS+"/articulos/"+id);
-            console.log(res)*/
-            this.traeArticulos();
-            console.log('Borrar')
+           if(confirm("¿Seguro que deseas eliminar este articulo?"))
+           {
+                const res = await axios.delete(URL_DATOS+"/articulos/"+id)
+                this.traeArticulos();
+                console.log(res)
+                
+            }
+            else{
+                
+            }
+            
         },
         nuevoArticulo: function()
         {

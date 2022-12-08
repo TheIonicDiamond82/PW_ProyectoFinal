@@ -14,6 +14,8 @@ import EditarProveedor from '../components/EditarProveedor.vue'
 import NuevoProveedor from '../components/NuevoProveedor.vue'
 import Altas from '../views/Altas.vue'
 import Bajas from '../views/Bajas.vue'
+import FormAltas from '../components/FormAltas.vue'
+import FormBajas from '../components/FormBajas.vue'
 import TablaAltas from '../components/TablaAltas.vue'
 import TablaBajas from '../components/TablaBajas.vue'
 
@@ -105,6 +107,12 @@ const routes = [
 
   },
   {
+    path:'/formaltas',
+    name:'formaltas',
+    component:FormAltas,
+
+  },
+  {
     path:'/tablaaltas',
     name:'tablaaltas',
     component:TablaAltas,
@@ -114,6 +122,12 @@ const routes = [
     path:'/bajas',
     name:'bajas',
     component:Bajas,
+
+  },
+  {
+    path:'/formbajas',
+    name:'formbajas',
+    component:FormBajas,
 
   },
   {

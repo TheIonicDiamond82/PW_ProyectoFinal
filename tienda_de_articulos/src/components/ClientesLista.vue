@@ -82,8 +82,16 @@ export default {
         {
             /*const res = await axios.delete(URL_DATOS+"/articulos/"+id);
             console.log(res)*/
-            this.traeClientes();
-            console.log('Borrar')
+            if(confirm("¿Seguro que deseas eliminar a este cliente?"))
+           {
+                const res = await axios.delete(URL_DATOS+"/clientes/"+id)
+                this.traeClientes();
+                console.log(res)
+                
+            }
+            else{
+                
+            }
         },
         nuevoCliente: function()
         {
